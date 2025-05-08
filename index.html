@@ -12,23 +12,27 @@
     <section class="orientation">
     <section class="sidebar">
         <div class="topbar">
-            <h1>Elijah Hamel</h1>
+            <h1 class="big">Elijah Hamel</h1>
+            <img class="sol" src="img/blueknight.png" alt="A blue knight from castle crashers">
         </div>
-        <div class="begone">
+        <div id="begone">
             <div class="intro">
-                <p>Hi, my name is Eli, I’m a student at CART currently learning about the basics of web development. I
+                <div class="content">
+                    <button onclick="makeGone()">Content Overview ></button>
+                </div>
+                <p class="bg">Hi, my name is Eli, I’m a student at CART currently learning about the basics of web development. I
                     created this portfolio to showcase the different skills I’ve learned throughout my school year and
-                    to log my progress as I continue to grow as a person. I have included a little bit about who I am, a
-                    showcase of different projects I’ve completed, and my resume. I hope you enjoy learning about me and
-                    what I’ve learned.</p>
-            </div>
-            <div class="content">
-                <button>Content Overview ></button>
+                    to log my progress as I continue to grow as a person and programmer. I have included a little bit about who I am, a
+                    showcase of different projects I’ve completed, and my resume. I hope you enjoy learning about me, and seeing what I learned.</p>
             </div>
         </div>
-        <div class="come">
+        <div id="come" style="display:none">
+            <div class="content">
+                <button onclick="comeBack()">Introduction ></button>
+            </div>
+            <div class="gb">
             <p>
-                I’m Eli, welcome to my portfolio. I am a student learning the fundamentals about web development, with
+                Welcome to my portfolio. I am a student learning the fundamentals about web development, with
                 experience in HTML, CSS, and JavaScript. I created this website to showcase the skills I’ve developed so
                 far and to share my work with others who may be interested in what I’m building. This site includes
                 several key pages:
@@ -45,15 +49,16 @@
                 <li>Contact - A way to contact me, whether for questions, or feedback on my work. This will include most
                     of my professional contact information as well as a link to my linkedin profile.</li>
             </ul>
-            <p>Each page is clear and easy to navigate, making it easy to learn about me and allow me to demonstrate
-                what I’ve created along with my classmates.</p>
+            <p>Each page is clear and easy to navigate, making it easy to learn about me while allowing me to demonstrate
+                what I’ve created along with my classmates throughout the schoolyear.</p>
+            </div>
         </div>
         <div class="navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About Me</a>
             <a href="resume.html">Resume</a>
             <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+            <a class="n" href="contact.html">Contact</a>
         </div>
     </section>
     <section class="options">
