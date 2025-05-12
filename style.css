@@ -35,8 +35,18 @@ body {
     margin-bottom: 2vh;
 }
 
+.navigation a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
 a:hover {
     text-decoration: underline;
+    color: rgb(153, 175, 232);
 }
 
 .options {
@@ -95,4 +105,101 @@ a:hover {
 
 .big {
     font-size: 3.6vh;
+}
+
+.absa {
+    color: black;
+    padding: 40% 0 0 8.9%;   
+    font-size: 4vw; 
+}
+
+.absr {
+    color: black;
+    padding: 40% 0 0 18%;   
+    font-size: 4vw; 
+}
+
+.resume {
+    width: 20vw;
+    height: 40vh;
+    margin-top: 5vh;
+    margin-left: 8vw;
+    background-image: url("img/resume.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.abtme {
+    width: 20vw;
+    height: 40vh;
+    margin-top: 5vh;
+    margin-left: 8vw;
+    background-image: url("img/hansumguy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ova {
+    position: relative;
+    width: 20vw; /* Matches the size of .port */
+    height: 40vh; /* Matches the size of .port */
+    margin-top: 5vh;
+    margin-left: 8vw;
+    overflow: hidden; /* Ensures the animation doesn't go outside the container */
+}
+
+.port {
+    position: absolute;
+    width: 100%; /* Matches the parent container */
+    height: 100%; /* Matches the parent container */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: slide-carousel 9s infinite; /* Adjust duration as needed */
+}
+
+@keyframes slide-carousel {
+    0% {
+        background-image: url("img/hansumguy.jpg");
+        transform: translateX(0); /* Start in view */
+    }
+    33% {
+        transform: translateX(100%); /* Slide out to the right */
+    }
+    34% {
+        background-image: url("img/resume.png");
+        transform: translateX(-100%); /* Next image starts off-screen to the left */
+    }
+    66% {
+        transform: translateX(0); /* Next image slides into view */
+    }
+    67% {
+        transform: translateX(100%); /* Slide out to the right */
+    }
+    68% {
+        background-image: url("img/another-image.jpg");
+        transform: translateX(-100%); /* Next image starts off-screen to the left */
+    }
+    100% {
+        transform: translateX(0); /* Next image slides into view */
+    }
+}
+
+.absp {
+    color: black;
+    padding: 40% 0 0 18%;   
+    font-size: 4vw;
+}
+.port p {
+    color: rgb(86, 125, 221);
+}
+
+.abtme p {
+    color: rgb(86, 125, 221);
+}
+
+.resume p {
+    color: rgb(86, 125, 221);
 }
