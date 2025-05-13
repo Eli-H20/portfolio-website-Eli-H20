@@ -1,11 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+* {
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     background-color: rgb(153, 175, 232);
     color: white;
     margin: 0;
 }
 
+h1 {
+    font-size: 2vw;
+}
+
 .petsmol {
     width: 50%;
+}
+
+.petsmol2 {
+    width: 20%;
 }
 
 #muv {
@@ -13,8 +29,13 @@ body {
     margin-left: 10vw;
 }
 
+#muv2 {
+    margin-left: 15vw;
+}
+
 .big {
     margin-left: 2vw;
+    font-size: 2vw;
 }
 
 .sidebar {
@@ -26,7 +47,25 @@ body {
     background-color: rgb(0, 0, 0, 30%);
 }
 
+.sidebarp {
+    display: flex;
+    flex-direction: column;
+    border-right: rgb(255, 255, 255) 1px solid;
+    min-width: 50vh;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 30%);
+}
+
 .sidebara {
+    display: flex;
+    flex-direction: column;
+    border-right: rgb(255, 255, 255) 1px solid;
+    min-width: 50vh;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 30%);
+}
+
+.sidebarr {
     display: flex;
     flex-direction: column;
     border-right: rgb(255, 255, 255) 1px solid;
@@ -148,6 +187,21 @@ a:hover {
     margin-top: 1vh;
 }
 
+.bunda {
+    margin-top: 5vh;
+    font-size: 1.1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+    max-width: 20vw;
+    background-color: rgb(0, 0, 0, 30%);
+    padding: 0vh 1vw;
+}
+
+.uunda {
+    text-decoration: underline;
+}
+
 .content button {
     margin-left: 2vh;
     background-color: rgb(0, 0, 0, 30%);
@@ -189,6 +243,24 @@ a:hover {
     font-size: 4vw; 
 }
 
+.personal {
+    width: 20vw;
+    height: 40vh;
+    background-image: url("img/contat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.writing {
+    width: 20vw;
+    height: 40vh;
+    background-image: url("img/write.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .contat {
     width: 20vw;
     height: 40vh;
@@ -216,6 +288,15 @@ a:hover {
     position: relative;
 }
 
+.perc {
+    width: 20vw;
+    height: 40vh;
+    background-image: url("img/pc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 .ovaa {
     position: relative;
     width: 20vw; /* Matches the size of .port */
@@ -235,6 +316,13 @@ a:hover {
     width: 20vw; /* Matches the size of .port */
     height: 40vh; /* Matches the size of .port */
     margin-left: 8vw;
+}
+
+.ovaw {
+    position: relative;
+    width: 20vw; /* Matches the size of .port */
+    height: 40vh; /* Matches the size of .port */
+    margin-left: 22.2vw;
 }
 
 .ovac {
@@ -274,6 +362,13 @@ a:hover {
     padding: 40% 0 0 18%;   
     font-size: 4vw;
 }
+
+.absw {
+    color: black;
+    padding: 40% 0 0 30%;   
+    font-size: 4vw;
+}
+
 .port p {
     color: rgb(86, 125, 221);
 }
@@ -282,10 +377,26 @@ a:hover {
     color: rgb(86, 125, 221);
 }
 
+.perc p {
+    color: rgb(86, 125, 221);
+}
+
 .resume p {
+    color: rgb(86, 125, 221);
+}
+
+.writing p {
     color: rgb(86, 125, 221);
 }
 
 .contat p {
     color: rgb(86, 125, 221);
+}
+
+.abtme, .writing, .port, .contat, .resume, .perc {
+    margin-left: 5vw;
+}
+
+.resumeimg {
+    margin-left: 20vw;
 }
