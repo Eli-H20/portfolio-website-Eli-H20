@@ -4,6 +4,19 @@ body {
     margin: 0;
 }
 
+.petsmol {
+    width: 50%;
+}
+
+#muv {
+    margin-top: 8vh;
+    margin-left: 10vw;
+}
+
+.big {
+    margin-left: 2vw;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -13,11 +26,60 @@ body {
     background-color: rgb(0, 0, 0, 30%);
 }
 
+.sidebara {
+    display: flex;
+    flex-direction: column;
+    border-right: rgb(255, 255, 255) 1px solid;
+    min-width: 50vh;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 30%);
+}
+
 .topbar {
     display: flex;
-    margin-left: 2vh;
     font-size: 3vh;
     text-decoration: underline;
+}
+
+.upbox {
+    display: flex;
+    margin-left: 13.19vw;
+    margin-top: 10vh;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 45vw;
+    background-color: rgb(0, 0, 0, 30%);
+    padding: 2vh 2vw;
+    font-size: 1vw;
+}
+
+.cent {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.im12 {
+    display: flex;
+    margin-top: 8vh;
+    justify-content: center;
+}
+
+.im1{
+    margin-top: 0;
+    margin-right: 5vw;
+    max-width: 20vw;
+    max-height: 40vh;
+}
+
+.im2 {
+    margin-top: 0;
+    margin-left: 5vw;
+    max-width: 19vw;
+    max-height: 36vh;
+}
+
+.flexpapa {
+    display: flex;
 }
 
 .navigation {
@@ -26,13 +88,14 @@ body {
     justify-content: flex-end;
     height: 100vh;
     margin-left: 2vh;
-    font-size: 135%;
+    font-size: 140%;
 }
 
 .navigation a {
     color: white;
     text-decoration: none;
     margin-bottom: 2vh;
+    letter-spacing: 5px;
 }
 
 .navigation a:hover {
@@ -45,7 +108,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+
     color: rgb(153, 175, 232);
 }
 
@@ -119,11 +182,25 @@ a:hover {
     font-size: 4vw; 
 }
 
+.absc {
+    margin: 3.3vh;
+    color: black;
+    padding: 40% 0 0 10.8%;   
+    font-size: 4vw; 
+}
+
+.contat {
+    width: 20vw;
+    height: 40vh;
+    background-image: url("img/contat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .resume {
     width: 20vw;
     height: 40vh;
-    margin-top: 5vh;
-    margin-left: 8vw;
     background-image: url("img/resume.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,58 +210,63 @@ a:hover {
 .abtme {
     width: 20vw;
     height: 40vh;
-    margin-top: 5vh;
-    margin-left: 8vw;
     background-image: url("img/hansumguy.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
 }
 
-.ova {
+.ovaa {
+    position: relative;
+    width: 20vw; /* Matches the size of .port */
+    height: 40vh; /* Matches the size of .port */
+    margin-left: 8vw;
+}
+
+.ovar {
+    position: relative;
+    width: 20vw; /* Matches the size of .port */
+    height: 40vh; /* Matches the size of .port */
+    margin-left: 8vw;
+}
+
+.ovap {
+    position: relative;
+    width: 20vw; /* Matches the size of .port */
+    height: 40vh; /* Matches the size of .port */
+    margin-left: 8vw;
+}
+
+.ovac {
     position: relative;
     width: 20vw; /* Matches the size of .port */
     height: 40vh; /* Matches the size of .port */
     margin-top: 5vh;
     margin-left: 8vw;
-    overflow: hidden; /* Ensures the animation doesn't go outside the container */
 }
 
 .port {
-    position: absolute;
-    width: 100%; /* Matches the parent container */
-    height: 100%; /* Matches the parent container */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    animation: slide-carousel 9s infinite; /* Adjust duration as needed */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover; /* Ensure the image covers the area */
+    background-position: center; /* Center the image */
+    animation: image-slide 10s infinite; /* Animation duration and loop */
 }
 
-@keyframes slide-carousel {
-    0% {
-        background-image: url("img/hansumguy.jpg");
-        transform: translateX(0); /* Start in view */
-    }
-    33% {
-        transform: translateX(100%); /* Slide out to the right */
-    }
-    34% {
-        background-image: url("img/resume.png");
-        transform: translateX(-100%); /* Next image starts off-screen to the left */
-    }
-    66% {
-        transform: translateX(0); /* Next image slides into view */
-    }
-    67% {
-        transform: translateX(100%); /* Slide out to the right */
-    }
-    68% {
-        background-image: url("img/another-image.jpg");
-        transform: translateX(-100%); /* Next image starts off-screen to the left */
-    }
-    100% {
-        transform: translateX(0); /* Next image slides into view */
-    }
+@keyframes image-slide {
+  0% {
+    background-image: url('img/calc.jpg'); /* Replace with your image URL */
+  }
+  33% {
+    background-image: url('img/ball.jpg'); /* Replace with your image URL */
+  }
+  66% {
+    background-image: url('img/tri.jpg'); /* Replace with your image URL */
+  }
+  100% {
+    background-image: url('img/calc.jpg'); /* Back to the first image */
+  }
 }
 
 .absp {
@@ -201,5 +283,9 @@ a:hover {
 }
 
 .resume p {
+    color: rgb(86, 125, 221);
+}
+
+.contat p {
     color: rgb(86, 125, 221);
 }
